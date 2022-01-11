@@ -17,16 +17,20 @@ for (const namespace of namespaces) {
     for (let i = 0; i < nInfo; i++) {
         const info = repo.getInfo(namespace, i);
         console.log("info", i, info);
+
         const type = info.getType();
-        console.log("type", type);
+        console.log("type", type); // TODO see https://gjs-docs.gnome.org/girepository20~2.0_api-infotype/
+        
         const name = info.getName();
         console.log("name", name);
+
         const typelib = info.getTypelib();
         console.log("typelib", typelib);
     }
 
     const version = repo.getVersion(namespace);
     console.log("version", version);
+    
     const dependencies = repo.getDependencies(namespace);
     console.log("dependencies", dependencies);
 }
