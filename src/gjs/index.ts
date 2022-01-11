@@ -1,5 +1,5 @@
-import * as Gir  from './Gjs/GIRepository-2.0'; 
-import * as GLib  from './Gjs/GLib-2.0';
+import * as Gir  from './types/GIRepository-2.0'; 
+import * as GLib  from './types/GLib-2.0';
 
 Gir.Repository.prepend_search_path(GLib.get_current_dir());
 const repo = Gir.Repository.get_default();

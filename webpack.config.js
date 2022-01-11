@@ -1,9 +1,9 @@
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 module.exports = {
-    entry: ['./src/index.ts'],
+    entry: ['./src/gjs/index.ts'],
     output: {
-        filename: 'index.js',
+        filename: 'gjs/index.js',
     },
     mode: 'development',
     module: {
